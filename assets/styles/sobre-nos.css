@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* .ibm-plex-sans-<uniquifier> {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    background-color: #151414;
+      font-family: "IBM Plex Sans", sans-serif;
+
+}
+
+.body {
+display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    width: 900px;
+}
+
+.body-p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.body-p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.body-p a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+    background-color: #091F2C;
+    padding: 20px;
+        font-family: "IBM Plex Sans", sans-serif;
+        margin-top: 50px;
+
+}
+.footer-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-li ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+#footerLogo {
+    width: 50px;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    p {
+        width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+    p {
+        width: 100%;
+        max-width: 700px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 22px;
+        max-width: 600px;
+    }
+    
+    .footer-li {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-li ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    .body-p {
+        gap: 15px;
+    }
+    
+    footer {
+        padding: 15px;
+        margin-top: 30px;
+    }
+    
+    .footer-li ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #footerLogo {
+        width: 40px;
+    }
+}

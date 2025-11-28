@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* .ibm-plex-sans-<uniquifier> {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    background-color: #151414;
+}
+
+.navbar {
+    font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 40px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar-links a:hover {
+    color: #ccc;
+}
+
+#loginBtn {
+    text-decoration: none;
+    color: #367B99;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#loginBtn:hover {
+    color: white;
+}
+
+#logo {
+    width: 60px;
+    height: auto;
+}
+
+/* main */
+
+.main-block-1 {
+    background-color: #091F2C;
+    font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-block-1 h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    width: 800px;
+}
+.main-block-1 p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 600px;
+}
+
+#notebookimg {
+    width: 300px;
+}
+
+.main-block-2 {
+     font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.main-block-2 h2{
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.main-block-blocks {
+    display: flex;
+    margin-top: 30px;
+    gap: 50px;
+}
+.main-block-blocks li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.ia-block {
+    padding: 20px;
+    background-color: #091F2C;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.ia-block h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.frontend-block h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.backend-block h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.ia-block ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.ia-block:hover {
+    background-color: #071924;
+}
+
+.frontend-block:hover {
+    background-color: #071924;
+}
+
+.backend-block:hover {
+    background-color: #071924;
+}
+
+.frontend-block ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.backend-block ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.frontend-block {
+    padding: 20px;
+    background-color: #091F2C;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.backend-block {
+    padding: 20px;
+    background-color: #091F2C;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+/* footer */
+
+footer {
+    background-color: #091F2C;
+    padding: 20px;
+        font-family: "IBM Plex Sans", sans-serif;
+        margin-top: 50px;
+
+}
+.footer-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-li ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+#footerLogo {
+    width: 50px;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .main-block-1 h1 {
+        width: 600px;
+        font-size: 35px;
+    }
+    
+    .main-block-1 p {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navbar-content {
+        gap: 20px;
+    }
+    
+    .navbar-links {
+        gap: 20px;
+    }
+    
+    .main-block-1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .main-block-1 h1 {
+        width: 100%;
+        font-size: 32px;
+    }
+    
+    .main-block-1 p {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    #notebookimg {
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    .main-block-blocks {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .ia-block,
+    .frontend-block,
+    .backend-block {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .footer-li {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-li ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .navbar-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-block-1 {
+        padding: 20px 15px;
+    }
+    
+    .main-block-1 h1 {
+        font-size: 28px;
+    }
+    
+    .main-block-1 p {
+        font-size: 16px;
+    }
+    
+    #notebookimg {
+        width: 200px;
+    }
+    
+    .main-block-2 h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .ia-block,
+    .frontend-block,
+    .backend-block {
+        padding: 15px;
+    }
+    
+    .main-block-blocks li {
+        font-size: 18px;
+    }
+    
+    footer {
+        padding: 15px;
+        margin-top: 30px;
+    }
+    
+    .footer-li ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #footerLogo {
+        width: 40px;
+    }
+}

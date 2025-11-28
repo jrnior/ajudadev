@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* .ibm-plex-sans-<uniquifier> {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #151414;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #091F2C;
+    margin-top: 200px;
+    padding: 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#create-acc-a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+#create-acc-a a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+#create-acc-a a:hover {
+    text-decoration: underline;
+}
+
+.form-login {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+#emailbox {
+    padding: 10px 30px;
+    background-color: #114559;
+    border: none;
+    font-size: 17px;
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+#passwordbox {
+    font-family: "IBM Plex Sans", sans-serif;
+    padding: 10px 30px;
+    background-color: #114559;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
+#btnEntrar {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #114559;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+
+}
+#btnEntrar:hover {
+    background-color: #1d4358;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .container {
+        margin-top: 100px;
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    
+    #create-acc-a {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    #emailbox, #passwordbox {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+        padding: 15px;
+        width: 95%;
+    }
+    
+    #create-acc-a {
+        font-size: 16px;
+    }
+    
+    #emailbox, #passwordbox {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+    
+    #btnEntrar {
+        font-size: 15px;
+        padding: 8px;
+        width: 100%;
+    }
+}

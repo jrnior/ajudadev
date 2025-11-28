@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #151414;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #091F2C;
+    margin-top: 200px;
+    padding: 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#p-cadastro1 {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#p-cadastro1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+#p-cadastro1 a:hover {
+    text-decoration: underline;
+}
+
+.formcadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#nomecadastro, #emailcadastro, #senhacadastro {
+    padding: 10px 30px;
+    background-color: #114559;
+    border: none;
+    font-size: 17px;
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 100%;
+}
+
+button[type="submit"] {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #114559;
+    border: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4358;
+}
+
+.cadastro p:last-child {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cadastro p:last-child a {
+    color: white;
+    text-decoration: none;
+}
+
+.cadastro p:last-child a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .container {
+        margin-top: 100px;
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    
+    #p-cadastro1 {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+        padding: 15px;
+        width: 95%;
+    }
+    
+    #p-cadastro1 {
+        font-size: 16px;
+    }
+    
+    #nomecadastro, #emailcadastro, #senhacadastro {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+    
+    button[type="submit"] {
+        font-size: 15px;
+        padding: 10px 25px;
+        width: 100%;
+    }
+    
+    .cadastro p:last-child {
+        font-size: 14px;
+        text-align: center;
+    }
+}
