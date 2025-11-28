@@ -2,7 +2,7 @@
 session_start();
 include '../pages/conexao.php';
 
-// Verificar se está logado como ADMIN
+
 if (!isset($_SESSION['admin_logado']) || $_SESSION['admin_logado'] !== true) {
     header("Location: admin_login.php");
     exit();
