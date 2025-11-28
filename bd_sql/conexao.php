@@ -1,11 +1,8 @@
 <?php
-session_start();
-
-// Configurações para servidor InfinityFree
-$host = "sql300.infinityfree.com";
-$usuario = "if0_40546855"; 
-$senha = "t7f4Rezn8K26T";
-$banco = "if0_40546855_ajuda_dev";
+$host = "localhost";
+$usuario = "root"; // usuário padrão do MySQL
+$senha = ""; // senha do MySQL (vazia por padrão no XAMPP)
+$banco = "sistema_login";
 
 // Criar conexão
 $conn = new mysqli($host, $usuario, $senha, $banco);
